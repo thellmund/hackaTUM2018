@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/personImageView"
+            android:src="@android:color/darker_gray"
+            android:layout_width="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_height="40dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+        <View
+                android:id="@+id/talkingTimeBar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/rounded_corners_background"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+        <TextView
+                android:id="@+id/personTalkingTimeTextView"
+                android:layout_width="match_parent"
+                android:textColor="#aaa"
+                tools:text="12:30"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
